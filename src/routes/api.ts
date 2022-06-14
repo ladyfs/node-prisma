@@ -12,8 +12,8 @@ router.delete('/post/:id', PostController.deletePost)
 router.get('/post/:id', PostController.one)
 
 router.get('/users', UserController.all)
+router.post('/user', UserController.create)
 
-// router.post('/user', UserController.create)
 
 // router.put('/user/:id', UserController.update)
 
