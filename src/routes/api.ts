@@ -6,17 +6,15 @@ import * as UserController from '../controllers/userController'
 const router = Router()
 
 router.get('/posts', PostController.all)
-router.post('/post', PostController.create)
-router.put('/post/:id', PostController.togglePost)
-router.delete('/post/:id', PostController.deletePost)
+router.get('/users', UserController.all)
 router.get('/post/:id', PostController.one)
 
-router.get('/users', UserController.all)
+router.post('/post', PostController.create)
 router.post('/user', UserController.create)
 
+router.put('/post/:id', PostController.togglePost)
 
-// router.put('/user/:id', UserController.update)
-
+router.delete('/post/:id', PostController.deletePost)
 
 
 export default router;
