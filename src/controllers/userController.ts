@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { UserService } from '../services/UserService';
+import { UserService } from '../service/UserService';
 
 export const all = async (req: Request, res: Response) => {
     const users = await UserService.findAll();
